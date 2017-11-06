@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  autocolor:
+    lang: Dockerfile
+    handler: ./autocolor
+    image: autocolor
