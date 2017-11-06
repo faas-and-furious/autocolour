@@ -6,4 +6,4 @@ functions:
   autocolor:
     lang: Dockerfile
     handler: ./autocolor
-    image: autocolor
+    image: alexellis2/autocolor:0.1
