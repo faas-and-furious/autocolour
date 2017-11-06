@@ -1,0 +1,15 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  autocolor:
+    lang: Dockerfile
+    handler: ./autocolour
+    image: alexellis2/autocolour:0.1
+
+  normalisecolor:
+    lang: Dockerfile
+    handler: ./normalisecolor
+    image: alexellis2/normalisecolor:0.1
+
