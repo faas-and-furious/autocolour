@@ -4,12 +4,12 @@ provider:
 
 functions:
   autocolor:
-    lang: Dockerfile
+    lang: dockerfile
     handler: ./autocolour
     image: alexellis2/autocolour:0.1
 
   normalisecolor:
-    lang: Dockerfile
+    lang: dockerfile
     handler: ./normalisecolor
     image: alexellis2/normalisecolor:0.1
 

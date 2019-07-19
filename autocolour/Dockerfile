@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.10
 WORKDIR /root/
 
 # Use any image as your base image, or "scratch"
@@ -7,7 +7,7 @@ WORKDIR /root/
 
 RUN apk add --no-cache curl bash imagemagick vim
 
-RUN curl -sL https://github.com/openfaas/faas/releases/download/0.6.9/fwatchdog > /usr/bin/fwatchdog \
+RUN curl -sL https://github.com/openfaas/faas/releases/download/0.15.2/fwatchdog > /usr/bin/fwatchdog \
     && chmod +x /usr/bin/fwatchdog
 
 COPY autocolor.sh .
